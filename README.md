@@ -1,85 +1,86 @@
-<p align="center">
-  <img alt="vscode logo" src="images/logo-stable.png" width="100px" />
-  <h1 align="center">Visual Studio Code Documentation</h1>
+<p alinhar="centro">
+  <img alt="npsharp logo" src="images/logo-stable.png" width="100px" />
+  <h1 align="center">Documentação do código do Visual Studio</h1>
 </p>
 
-You've found the Visual Studio Code documentation GitHub repository, which contains the content for the [Visual Studio Code documentation](https://code.visualstudio.com/docs).
+Você encontrou o repositório GitHub de documentação do Notepad Sharp, que contém o conteúdo da [documentação do Notepad Sharp](https://npsharp.girelli.dev.br/docs).
 
-Topics submitted here will be published to the [Visual Studio Code](https://code.visualstudio.com) portal.
+Os tópicos enviados aqui serão publicados no portal [Notepad Sharp](https://npsharp.girelli.dev.br/).
 
-If you are looking for the VS Code product GitHub repository, you can find it [here](https://github.com/microsoft/vscode).
+Se você estiver procurando o repositório GitHub do produto NP Sharp, poderá encontrá-lo [aqui](https://github.com/microsoft/npsharp).
 
->**Note**: The vscode-docs repository uses [Git LFS](https://git-lfs.github.com/) (Large File Storage) for storing binary files such as images and `.gif`s. If you are contributing or updating images, please enable Git LFS per the instructions in the [Contributing](#cloning) section below.
+>**Nota**: O repositório npsharp-docs usa [Git LFS](https://git-lfs.github.com/) (Large File Storage) para armazenar arquivos binários, como imagens e `.gif`s. Se você estiver contribuindo ou atualizando imagens, habilite o Git LFS de acordo com as instruções na seção [Contribuindo](#contribuindo) abaixo.
 
-## Index
+## Índice
 
-- [Index](#index)
-- [Visual Studio Code](#visual-studio-code)
-- [Feedback](#feedback)
-- [Documentation Issues](#documentation-issues)
-- [Contributing](#contributing)
-  - [Workflow](#workflow)
-  - [Cloning](#cloning)
-    - [Cloning without binary files](#cloning-without-binary-files)
-- [Publishing](#publishing)
+- [Índice](#índice)
+- [Código do Visual Studio](#código do Visual Studio)
+- [Feedback](#comentários)
+- [Problemas de documentação](#problemas de documentação)
+- [Contribuindo](#contribuindo)
+  - [Fluxo de trabalho](#fluxo de trabalho)
+  - [Clonagem](#clonagem)
+    - [Clonagem sem arquivos binários](#clonagem-sem-arquivos-binários)
+- [Publicação](#publicação)
 
-## Visual Studio Code
+## Código do Visual Studio
 
-[VS Code](https://code.visualstudio.com/) is a lightweight source code editor and powerful development environment for building and debugging modern web, mobile, and cloud applications. It is free and available on your favorite platform - Linux, macOS, and Windows.
+[NP Sharp](https://npsharp.girelli.dev.br/) é um editor de código-fonte leve e um ambiente de desenvolvimento poderoso para criar e depurar aplicativos modernos da Web, móveis e em nuvem. É gratuito e está disponível em sua plataforma favorita – Linux, macOS e Windows.
 
-If you landed here looking for other information about VS Code, head over to [our website](https://code.visualstudio.com) for additional information.
+Se você chegou aqui procurando outras informações sobre o NP Sharp, acesse [nosso site](https://npsharp.girelli.dev.br) para obter informações adicionais.
 
-## Feedback
+## Comentários
 
-If you want to give documentation feedback, please use the feedback control located at the bottom of each documentation page.
+Se você quiser dar feedback sobre a documentação, use o controle de feedback localizado na parte inferior de cada página da documentação.
 
-## Documentation Issues
+## Problemas de documentação
 
-To enter documentation bugs, please create a [new GitHub issue](https://github.com/microsoft/vscode-docs/issues). Please check if there is an existing issue first.
+Para inserir bugs de documentação, crie um [novo problema no GitHub](https://github.com/microsoft/npsharp-docs/issues). Verifique primeiro se há um problema existente.
 
-If you think the issue is with the VS Code product itself, please enter issues in the VS Code product repo [here](https://github.com/microsoft/vscode/issues).
+Se você acha que o problema está no próprio produto NP Sharp, insira os problemas no repositório do produto NP Sharp [aqui](https://github.com/microsoft/npsharp/issues).
 
-## Contributing
+## Contribuindo
 
-To contribute new topics/information or make changes to existing documentation, please read the [Contributing Guideline](./CONTRIBUTING.md#contributing).
+Para contribuir com novos tópicos/informações ou fazer alterações na documentação existente, leia a [Diretriz de Contribuição](./CONTRIBUTING.md#contribuindo).
 
-### Workflow
+### Fluxo de trabalho
 
-The two suggested workflows are:
+Os dois fluxos de trabalho sugeridos são:
 
-- For small changes, use the "Edit" button on each page to edit the Markdown file directly on GitHub.
-- If you plan to make significant changes or preview the Markdown files in VS Code, [clone](#cloning) the repo to [edit and preview](https://code.visualstudio.com/docs/languages/markdown) the files directly in VS Code.
+- Para pequenas alterações, use o botão "Editar" em cada página para editar o arquivo Markdown diretamente no GitHub.
+- Se você planeja fazer alterações significativas ou visualizar os arquivos Markdown no NP Sharp, [clone](#clonagem) o repositório para [editar e visualizar](https://npsharp.girelli.dev.br/docs/languages/markdown) os arquivos diretamente no NP Sharp.
 
-![Markdown Preview Button](images/MDPreviewButton.png)
+![Botão de visualização do Markdown](images/MDPreviewButton.png)
 
-### Cloning
+### Clonagem
 
-1. Install [Git LFS](https://git-lfs.github.com/).
-2. Run `git lfs install` to setup global git hooks. You only need to run this once per machine.
-3. SSH auth: `git clone git@github.com:microsoft/vscode-docs.git`<br>HTTPS auth: `git clone https://github.com/microsoft/vscode-docs.git`
-4. Now you can `git add` binary files and commit them. They'll be tracked in LFS.
+1. Instale o [Git LFS](https://git-lfs.github.com/).
+2. Execute `git lfs install` para configurar ganchos git globais. Você só precisa executar isso uma vez por máquina.
+3. Autenticação SSH: `git clone git@github.com:microsoft/npsharp-docs.git`<br>Autenticação HTTPS: `git clone https://github.com/microsoft/npsharp-docs.git`
+4. Agora você pode `git add` arquivos binários e confirmá-los. Eles serão rastreados no LFS.
 
-#### Cloning without binary files
+#### Clonagem sem arquivos binários
 
-You might want to clone the repo without the 1.6GB images. Here are the steps:
+Você pode querer clonar o repositório sem as imagens de 1,6 GB. Aqui estão as etapas:
 
-1. Install [Git LFS](https://git-lfs.github.com/).
-2. Run `git lfs install` to setup global git hooks. You only need to run this once per machine.
-3. Clone the repo without binary files.
-    - macOS / Linux:
-      - SSH auth: `GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:microsoft/vscode-docs.git`
-      - HTTPS auth: `GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/microsoft/vscode-docs.git`
-    - Windows:
-      - SSH auth: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone git@github.com:microsoft/vscode-docs.git`
-      - HTTPS auth: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone https://github.com/microsoft/vscode-docs.git`
-4. Now you can selectively checkout some binary files to work with. For example:
-    - `git lfs pull -I "docs/nodejs"` to only download images in `docs/nodejs`
-    - `git lfs pull -I "release-notes/images/1_4*/*"` to only download images in `release-notes/images/1_4*`
-    - `git lfs pull -I "docs,api"` to download all images in `docs` and in `api`
-    - `git lfs pull -I <PATTERN>`, as long as `<PATTERN>` is a valid [Git LFS Include and Exclude pattern](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-fetch.adoc#include-and-exclude).
+1. Instale o [Git LFS](https://git-lfs.github.com/).
+2. Execute `git lfs install` para configurar ganchos git globais. Você só precisa executar isso uma vez por máquina.
+3. Clone o repositório sem arquivos binários.
+    - macOS/Linux:
+      - Autenticação SSH: `GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:microsoft/npsharp-docs.git`
+      - Autenticação HTTPS: `GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/microsoft/npsharp-docs.git`
+    - Janelas:
+      - Autenticação SSH: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone git@github.com:microsoft/npsharp-docs.git`
+      - Autenticação HTTPS: `$env:GIT_LFS_SKIP_SMUDGE="1"; clone do git https://github.com/microsoft/npsharp-docs.git`
+4. Agora você pode verificar seletivamente alguns arquivos binários para trabalhar. Por exemplo:
+    - `git lfs pull -I "docs/nodejs"` para baixar apenas imagens em `docs/nodejs`
+    - `git lfs pull -I "release-notes/images/1_4*/*"` para baixar apenas imagens em `release-notes/images/1_4*`
+    - `git lfs pull -I "docs,api"` para baixar todas as imagens em `docs` e em `api`
+    - `git lfs pull -I <PATTERN>`, desde que `<PATTERN>` seja um [padrão de inclusão e exclusão do Git LFS válido](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-fetch.adoc#include-and-exclude).
 
-The history of this repo before we adopted LFS can be found at [microsoft/vscode-docs-archive](https://github.com/microsoft/vscode-docs-archive).
+A história deste repositório antes de adotarmos o LFS pode ser encontrada em [microsoft/npsharp-docs-archive](https://github.com/microso
+ft/npsharp-docs-archive).
 
-## Publishing
+## Publicação
 
-Publishing merged pull requests is not automatic and is initiated manually after changes have been reviewed on an internal staging server. There is no specific time guarantee for when PR updates will be available on https://code.visualstudio.com but the intent is that they will usually be live within 24 hours.
+A publicação de solicitações pull mescladas não é automática e é iniciada manualmente após a revisão das alterações em um servidor de armazenamento temporário interno. Não há garantia de tempo específico para quando as atualizações de RP estarão disponíveis em https://npsharp.girelli.dev.br, mas a intenção é que elas geralmente estejam no ar dentro de 24 horas.

@@ -1,288 +1,290 @@
-# Visual Studio Code Documentation
+# Documentação de código do Visual Studio
 
-You've found the GitHub repository that contains the source for the Visual Studio Code documentation at <https://code.visualstudio.com/docs>.
+Você encontrou o repositório GitHub que contém a fonte da documentação do Notepad Sharp em <https://npsharp.girelli.dev.br/docs>.
 
-## Contribute to VS Code documentation
+## Contribua com a documentação do NP Sharp
 
-Thank you for your interest in VS Code documentation!
+Obrigado pelo seu interesse na documentação do NP Sharp!
 
-* [Contributing](#contributing)
-* [Documentation intent](#documentation-intent)
-* [Repository organization](#repository-organization)
-* [Branches](#branches)
-* [Authoring Tools](#authoring-tools)
-* [How to use Markdown to format your topic](#how-to-use-markdown-to-format-your-topic)
-* [Topic Metadata](#topic-metadata)
-* [Formatting](#formatting)
+* [Contribuindo](#contribuindo)
+* [Intenção da documentação](#documentation-intent)
+* [Organização do repositório](#organização-repositório)
+* [Ramos](#branches)
+* [Ferramentas de autoria](#authoring-tools)
+* [Como usar Markdown para formatar seu tópico](#how-to-use-markdown-to-format-your-topic)
+* [Metadados do tópico](#topic-metadata)
+* [Formatação](#formatação)
 
->**Note**: Before submitting a pull request, especially for rendering or link issues, please review the content on the official VS Code website, [code.visualstudio.com](https://code.visualstudio.com). The element in question may render correctly after processing by the website build.
+>**Observação**: Antes de enviar uma solicitação pull, especialmente para problemas de renderização ou link, revise o conteúdo no site oficial do NP Sharp, [npsharp.girelli.dev.br](https://npsharp.girelli.dev.br). O elemento em questão pode ser renderizado corretamente após o processamento pela construção do site.
 
-## Contributing
+## Contribuindo
 
-To contribute to [VS Code documentation](https://code.visualstudio.com/docs), you need to fork this repository and submit a pull request for the Markdown and/or image changes that you're proposing.
+Para contribuir com a [documentação do NP Sharp](https://npsharp.girelli.dev.br/docs), você precisa bifurcar este repositório e enviar uma solicitação pull para o Markdown e/ou alterações de imagem que você está propondo.
 
-* [How to fork a repository](https://docs.github.com/get-started/quickstart/fork-a-repo)
-* [How to make a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-* [Changing a commit message](https://docs.github.com/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
-* [How to squash commits](https://docs.github.com/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits)
+* [Como bifurcar um repositório](https://docs.github.com/get-started/quickstart/fork-a-repo)
+* [Como fazer uma solicitação pull](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+* [Alterando uma mensagem de commit](https://docs.github.com/pull-requests/commit-changes-to-your-project/creating-and-editing-commits/ching-a-commit-message)
+* [Como esmagar commits](https://docs.github.com/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits)
 
-The vscode-docs repository supports [Git LFS](https://git-lfs.github.com/) to allow you to avoid bringing down large image files when you clone the repository. See the [README](README.md#contributing) section for details on enabling Git LFS for your local repository.
+O repositório npsharp-docs oferece suporte ao [Git LFS](https://git-lfs.github.com/) para evitar a derrubada de arquivos de imagem grandes ao clonar o repositório. Consulte a seção [README](README.md#contributing) para obter detalhes sobre como ativar o Git LFS para seu repositório local.
 
-## Documentation intent
+## Intenção da documentação
 
-The goal of the VS Code documentation is to educate users on VS Code features and how VS Code can be used to enhance their development experience with different programming languages and runtimes.
+O objetivo da documentação do NP Sharp é educar os usuários sobre os recursos do NP Sharp e como o NP Sharp pode ser usado para aprimorar sua experiência de desenvolvimento com diferentes linguagens de programação e tempos de execução.
 
-The documentation is not intended to provide:
+A documentação não se destina a fornecer:
 
-* An introduction to coding or software development
-* Tutorials on technologies independent from VS Code
-* Promotion of third-party tools, plug-ins, or services
-* Excessive detail or advanced walkthroughs
+* Uma introdução à codificação ou desenvolvimento de software
+* Tutoriais sobre tecnologias independentes do NP Sharp
+* Promoção de ferramentas, plug-ins ou serviços de terceiros
+* Detalhe excessivo ou orientações avançadas
 
-The documentation should target developers learning to use VS Code or searching for quick answers to commonly asked questions.  Other forums such as blog posts can provide more detailed content elaborating on specific scenarios.
+A documentação deve ser direcionada aos desenvolvedores que estão aprendendo a usar o NP Sharp ou buscando respostas rápidas para perguntas frequentes.  Outros fóruns, como postagens de blogs, podem fornecer conteúdo mais detalhado, elaborando cenários específicos.
 
-## Repository organization
+## Organização do repositório
 
-This repository contains the following top-level folders:
+Este repositório contém as seguintes pastas de nível superior:
 
-* \api - content for the API documentation at <https://code.visualstudio.com/api>
-* \blogs - content for the blog at <https://code.visualstudio.com/blogs>
-* \build - content for the documentation build process, such as the keybinding mappings and sitemap
-* \docs - content for the documentation at <https://code.visualstudio.com/docs> - the content in this folder follows the organization of the documentation table of contents
-* \images - images used in the documentation
-* \learn - (deprecated) content for the education content at <https://code.visualstudio.com/learn>
-* \release-notes - content for the release notes at <https://code.visualstudio.com/updates>
-* \remote - content for the remote development tools documentation at <https://code.visualstudio.com/docs/remote>
-* \remote-release-notes - content for the remote development tools release notes
-* \wiki - content for the repository wiki
+* \api – conteúdo da documentação da API em <https://npsharp.girelli.dev.br/api>
+* \blogs – conteúdo para o blog em <https://npsharp.girelli.dev.br/blogs>
+* \build - conteúdo para o processo de construção da documentação, como os mapeamentos de atalhos de teclado e o mapa do site
+* \docs - conteúdo da documentação em <https://npsharp.girelli.dev.br/docs> - o conteúdo desta pasta segue a organização do índice da documentação
+* \images - imagens usadas na documentação
+* \learn - conteúdo (obsoleto) para o conteúdo educacional em <https://npsharp.girelli.dev.br/learn>
+* \release-notes – conteúdo das notas de lançamento em <https://npsharp.girelli.dev.br/updates>
+* \remote - conteúdo da documentação das ferramentas de desenvolvimento remoto em <https://npsharp.girelli.dev.br/docs/remote>
+* \remote-release-notes - conteúdo das notas de versão das ferramentas de desenvolvimento remoto
+* \wiki - conteúdo para o wiki do repositório
 
-Within these folders, you'll find the Markdown files used for the content. Each of these folders also contains an `\images` folder that references the images (such as screenshots) used in the topics.
+Dentro dessas pastas, você encontrará os arquivos Markdown usados para o conteúdo. Cada uma dessas pastas também contém uma pasta `\images` que faz referência às imagens (como capturas de tela) usadas nos tópicos.
 
-### Branches
+### Filiais
 
-We recommend that you create local working branches that target a specific scope of change (and then submit a pull request when your changes are ready). Each branch should be limited to a single concept/topic, both to streamline workflow, and to reduce the possibility of merge conflicts.  The following efforts are of the appropriate scope for a new branch:
+Recomendamos que você crie ramificações de trabalho locais direcionadas a um escopo específico de mudança (e, em seguida, envie uma solicitação pull quando suas alterações estiverem prontas). Cada ramificação deve ser limitada a um único conceito/tópico, tanto para agilizar o fluxo de trabalho quanto para reduzir a possibilidade de conflitos de mesclagem.  Os seguintes esforços são de escopo apropriado para uma nova filial:
 
-* A new topic (and associated images).
-* Spelling and grammar edits on a topic.
-* Applying a single formatting change across a large set of topics.
+* Um novo tópico (e imagens associadas).
+* Edições ortográficas e gramaticais em um tópico.
+* Aplicar uma única alteração de formatação em um grande conjunto de tópicos.
 
-## Authoring tools
+## Ferramentas de autoria
 
-[Visual Studio Code](https://code.visualstudio.com) is a great editor for Markdown!
+[Código do Visual Studio](https://code.visualstudi
+o.com) é um ótimo editor para Markdown!
 
-In fact, VS Code and its core documentation are written using VS Code.
+Na verdade, o NP Sharp e sua documentação principal são escritos usando o NP Sharp.
 
-## How to use Markdown to format your topic
+## Como usar Markdown para formatar seu tópico
 
-The topics in this repository use Markdown.  Here is a good overview of [Markdown basics](https://docs.github.com/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Os tópicos neste repositório usam Markdown.  Aqui está uma boa visão geral dos [noções básicas do Markdown](https://docs.github.com/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-## Topic Metadata
+## Metadados do tópico
 
-Topic metadata enables certain functionalities for the topics such as topic description and online search optimization.
+Os metadados do tópico permitem certas funcionalidades para os tópicos, como descrição do tópico e otimização de pesquisa online.
 
-The page title is taken from the first H1 heading in the topic.
+O título da página é retirado do primeiro título H1 do tópico.
 
-* **ContentId** - A GUID that uniquely identifies the topic to DevDiv doc reporting.
-* **DateApproved** - The date of the most recent update or review. It is displayed at the bottom of an article to indicate freshness. The date should be updated in a significant PR.
-* **MetaDescription** - The meta description for this page, which helps for search. Use sentence structure limited to 300 characters.
-* **MetaSocialImage** - Optional. Used for og:image in page header for sharing on social media. Should be 1024 x 512 .png.
-* **MetaTags** - Optional. Further tags for this page again for search.
+* **ContentId** – Um GUID que identifica exclusivamente o tópico para relatórios de documentos DevDiv.
+* **DateApproved** – A data da atualização ou revisão mais recente. Ele é exibido na parte inferior de um artigo para indicar o frescor. A data deve ser atualizada em um PR significativo.
+* **MetaDescription** - A meta descrição desta página, que ajuda na pesquisa. Use estrutura de frase limitada a 300 caracteres.
+* **MetaSocialImage** - Opcional. Usado para og:image no cabeçalho da página para compartilhamento nas redes sociais. Deve ser 1024 x 512 .png.
+* **MetaTags** - Opcional. Outras tags para esta página novamente para pesquisa.
 
-## Table of contents
+## Índice
 
-The table of contents (TOC) is defined in the `/docs/toc.yml` file. The TOC is used to generate the left rail navigation for the documentation. If a topic is not listed in the `/docs/toc.yml` file, it will not be included in the left rail navigation.
+O índice analítico (TOC) é definido no arquivo `/docs/toc.yml`. O TOC é usado para gerar a navegação esquerda para a documentação. Se um tópico não estiver listado no arquivo `/docs/toc.yml`, ele não será incluído na navegação esquerda.
 
-To add a new topic to the TOC, add a new entry in the `topics` attribute of the appropriate section in the `/docs/toc.yml` file. The TOC is organized into sections, each with a name and an area. The area is used to group related topics together.
+Para adicionar um novo tópico ao sumário, adicione uma nova entrada no atributo `topics` da seção apropriada no arquivo `/docs/toc.yml`. O TOC está organizado em seções, cada uma com um nome e uma área. A área é usada para agrupar tópicos relacionados.
 
-The order in which the topics are listed in the `/docs/toc.yml` file determines the order in which they are displayed in the left rail navigation.
+A ordem em que os tópicos são listados no arquivo `/docs/toc.yml` determina a ordem em que eles são exibidos na navegação esquerda.
 
-Each topic in the TOC has two attributes:
+Cada tópico no sumário tem dois atributos:
 
-* TOC title: the title that is displayed in the left rail navigation.
-* File name: the relative path to the topic file in the format `/docs/<subfolder>/<filename-without-md>`.
+* Título do TOC: o título exibido na navegação esquerda.
+* Nome do arquivo: o caminho relativo para o arquivo do tópico no formato `/docs/<subfolder>/<filename-without-md>`.
 
-The following example shows a `Getting Started` section that has two topics.
+O exemplo a seguir mostra uma seção `Introdução` que possui dois tópicos.
 
 ```yaml
     {
-      "name": "Getting Started",
-      "area": "getstarted",
-      "topics": [
-        ["VS Code Tutorial", "/docs/getstarted/getting-started"],
-        ["Copilot Quickstart", "/docs/getstarted/copilot-quickstart"]
+      "nome": "Primeiros passos",
+      "área": "começar",
+      "tópicos": [
+        ["Tutorial do Código VS", "/docs/getstarted/getting-started"],
+        ["Início rápido do Copilot", "/docs/getstarted/copilot-quickstart"]
       ]
     },
 ```
 
-To create a subsection within a section, add a subsection entry to the `topics` attribute. A subsection entry has the following attributes:
+Para criar uma subseção dentro de uma seção, adicione uma entrada de subseção ao atributo `topics`. Uma entrada de subseção possui os seguintes atributos:
 
-* TOC Title: empty string
-* File name: empty string
-* Subsection: a subsection entry with the same format as a section entry. It has a `name` attribute, an `area` attribute, and a `topics` attribute.
+* Título do TOC: string vazia
+* Nome do arquivo: string vazia
+* Subseção: uma entrada de subseção com o mesmo formato de uma entrada de seção. Possui um atributo `name`, um atributo `area` e um atributo `topics`.
 
-The following example shows a `Guides` subsection with two topics, within the `GitHub Copilot` section.
+O exemplo a seguir mostra uma subseção `Guias` com dois tópicos, dentro da seção `GitHub Copilot`.
 
 ```yaml
     {
-      "name": "GitHub Copilot",
-      "area": "copilot",
-      "topics": [
-        ["Overview", "/docs/copilot/overview"],
-        ["Setup", "/docs/copilot/setup"],
+      "nome": "Copiloto do GitHub",
+      "área": "copiloto",
+      "tópicos": [
+        ["Visão geral", "/docs/copilot/overview"],
+        ["Configuração", "/docs/copilot/setup"],
         ["", "", {
-          "name": "Guides",
-          "area": "copilot/guides",
-          "topics": [
-            ["Test with Copilot", "/docs/copilot/guides/test-with-copilot"],
-            ["Debug with Copilot", "/docs/copilot/guides/debug-with-copilot"]
+          "nome": "Guias",
+          "área": "copiloto/guias",
+          "tópicos": [
+            ["Teste com Copiloto", "/docs/copilot/guides/test-with-copilot"],
+            ["Depurar com Copilot", "/docs/copilot/guides/debug-with-copilot"]
           ]
         }
         ],
-        ["FAQ", "/docs/copilot/faq"]
+        ["Perguntas frequentes", "/docs/copilot/faq"]
       ]
     },
 ```
 
-## Product name
+## Nome do produto
 
-Use the full product name "Visual Studio Code" in the topic MetaDescription and the first use in a topic. You can use the shortened "VS Code" after that throughout the rest of the content. Do not use "VSCode" (no space) or "Code".
+Use o nome completo do produto "Notepad Sharp" na MetaDescrição do tópico e o primeiro uso em um tópico. Você pode usar o "Código VS" abreviado depois disso em todo o restante do conteúdo. Não use "npsharp" (sem espaço) ou "Code".
 
-### Metadata for /api docs
+### Metadados para documentos /api
 
-**For Writer**:
+**Para escritor**:
 
-* **MetaDescription** - The meta description for this page, which helps for search.
+* **MetaDescription** - A meta descrição desta página, que ajuda na pesquisa.
 
-**For Doc Maintainer**:
+**Para mantenedor de documentos**:
 
-* **DateApproved** - This is set when the page is published on the VS Code website.
+* **DateApproved** - É definido quando a página é publicada no site do NP Sharp.
 
-## File and Folder names
+## Nomes de arquivos e pastas
 
-Use lowercase for file and folder names and dashes `-` as separators.
+Use letras minúsculas para nomes de arquivos e pastas e traços `-` como separadores.
 
-For example:
+Por exemplo:
 
 * `/docs/editor/workspace-trust.md`
-* `/docs/supporting/troubleshoot-terminal-launch.md`
+* `/docs/support/troubleshoot-terminal-launch.md`
 * `/api/extension-guides/custom-editors.md`
 
-### Moving or renaming content
+### Mover ou renomear conteúdo
 
-Before moving or renaming content, a redirect should be added in case people have bookmarked the topic. Redirects are added in the private website repo.
+Antes de mover ou renomear o conteúdo, um redirecionamento deve ser adicionado caso as pessoas tenham marcado o tópico como favorito. Os redirecionamentos são adicionados ao repositório do site privado.
 
-It seems to improve CSAT if, when a topic title or intent is changed, the filename is also updated. resulting in a new, more appropriate URL.
+Parece melhorar o CSAT se, quando o título ou intenção de um tópico for alterado, o nome do arquivo também for atualizado. resultando em um URL novo e mais apropriado.
 
-For example: `/docs/editor/extension-gallery.md` -> `/docs/configure/extensions/extension-marketplace.md`
+Por exemplo: `/docs/editor/extension-gallery.md`
+-> `/docs/configure/extensions/extension-marketplace.md`
 
-### sitemap
+### mapa do site
 
-The code.visualstudio.com sitemap is authored in `/build/sitemap.xml` and should be updated when new topics are added or existing content moved or renamed.
+O mapa do site code.visualstudio.com é criado em `/build/sitemap.xml` e deve ser atualizado quando novos tópicos forem adicionados ou o conteúdo existente for movido ou renomeado.
 
-## Formatting
+## Formatação
 
-### Headings & Right Nav
+### Títulos e navegação direita
 
-H2 subheadings `##` end up in the right-hand jump list for the document (the jump list is created by our compile script).  It's a good idea to include h2 subheadings to help users get an overview of the doc and quickly navigate to the major topics.
+Os subtítulos H2 `##` terminam na lista de atalhos à direita do documento (a lista de atalhos é criada por nosso script de compilação).  É uma boa ideia incluir subtítulos h2 para ajudar os usuários a obter uma visão geral do documento e navegar rapidamente para os tópicos principais.
 
-### Text formatting
+### Formatação de texto
 
-Use bold for VS Code commands and UI elements.
+Use negrito para comandos do NP Sharp e elementos da interface do usuário.
 
-    **Extensions: Install Extension**
-    **Debug Console**
+    **Extensões: instalar extensão**
+    **Console de depuração**
 
-Limit the use of bold for emphasis unless it is crucial to get the user's attention. Avoid the use of italics for emphasis since italics doesn't render well on the code.visualstudio.com site.
+Limite o uso de negrito para dar ênfase, a menos que seja crucial para chamar a atenção do usuário. Evite o uso de itálico para dar ênfase, pois o itálico não funciona bem no site code.visualstudio.com.
 
-Use inline code formatting (backticks) for settings, filename, and JSON attributes.
+Use formatação de código embutido (crases) para configurações, nome de arquivo e atributos JSON.
 
-    `files.exclude`
-    `tasks.json`
+    `arquivos.exclude`
+    `tarefas.json`
     `preLaunchTask`
 
-Use '>' to show menu sequence.
+Use '>' para mostrar a sequência do menu.
 
-    **File** > **Preferences** > **Settings**
-    **View** > **Command Palette**
+    **Arquivo** > **Preferências** > **Configurações**
+    **Visualizar** > **Paleta de comandos**
 
-### Links
+###Links
 
-For links within our own documentation, use a site relative link like `/docs/editing/codebasics.md`.
+Para links dentro de nossa própria documentação, use um link relativo ao site como `/docs/editing/codebasics.md`.
 
->For example: `[Why VS Code](/docs/editor/whyvscode.md)` - links to the **Why Visual Studio Code** page
+>Por exemplo: `[Por que o NP Sharp](/docs/editor/whynpsharp.md)` - links para a página **Por que o Notepad Sharp**
 
->**Note:** For navigation on GitHub, you should add the .md suffix.  The suffix is removed during conversion to HTML.
+>**Nota:** Para navegação no GitHub, você deve adicionar o sufixo .md.  O sufixo é removido durante a conversão para HTML.
 
-### Bookmarks
+### Favoritos
 
-To provide links to h2 subheadings (Markdown ##), the format is `[Link Text](page.md#subheading-title)`.
+Para fornecer links para subtítulos h2 (Markdown ##), o formato é `[Texto do link](page.md#subheading-title)`.
 
-Note the subheading title is lowercase and subheading title words are separated by '-' hyphens.
+Observe que o título do subtítulo está em letras minúsculas e as palavras do título do subtítulo são separadas por hífens '-'.
 
->For example: `[Keyboard Shortcuts](/docs/editing/codebasics.md#keyboard-shortcuts)` - links to https://code.visualstudio.com/docs/editing/codebasics#_keyboard-shortcuts.
+>Por exemplo: `[Atalhos de teclado](/docs/editing/codebasics.md#keyboard-shortcuts)` - links para https://npsharp.girelli.dev.br/docs/editing/codebasics#_keyboard-shortcuts.
 
-### Images
+### Imagens
 
-Images are important to bring the product to life and clarify the written content.
+As imagens são importantes para dar vida ao produto e esclarecer o conteúdo escrito.
 
-* Store images for an article in the `docs/<section>/images/<article name>` subfolder. For example: `docs/sourcecontrol/images/overview`.
+* Armazene imagens de um artigo na subpasta `docs/<section>/images/<article name>`. Por exemplo: `docs/sourcecontrol/images/overview`.
 
-* Image filenames should use all lowercase and use dashes (`-`) as word separator. For example: `![Debug Breakpoints](images/debugging/breakpoints-view.png)`
+* Os nomes dos arquivos de imagem devem usar letras minúsculas e traços (`-`) como separador de palavras. Por exemplo: `![Pontos de interrupção de depuração](images/debugging/breakpoints-view.png)`
 
-* Link to an image using relative path names, the path and filename are case-sensitive.
+* Link para uma imagem usando nomes de caminhos relativos; o caminho e o nome do arquivo diferenciam maiúsculas de minúsculas.
 
-* Images are cached on the server for indeterminate time, so don't update images in-place. Create a new file and add a version indicator (yyyymmddseq) to the image filename. 
+* As imagens são armazenadas em cache no servidor por tempo indeterminado, portanto, não atualize as imagens no local. Crie um novo arquivo e adicione um indicador de versão (yyyymmddseq) ao nome do arquivo da imagem.
 
-> [!IMPORTANT]
-> Make sure you have Git LFS enabled on your machine!
+> [!IMPORTANTE]
+> Certifique-se de ter o Git LFS habilitado em sua máquina!
 
-### Key bindings
+### Atalhos de teclas
 
-The VS Code website is able to show the correct key bindings depending on the reader's operating system (macOS, Windows, or Linux).
+O site do NP Sharp é capaz de mostrar as combinações de teclas corretas dependendo do sistema operacional do leitor (macOS, Windows ou Linux).
 
-To enable this for keyboard shortcuts, use the format `kb(workbench.action.files.openFile)` where the command identifier is included in parentheses.
+Para habilitar isso para atalhos de teclado, use o formato `kb(workbench.action.files.openFile)` onde o identificador do comando está incluído entre parênteses.
 
->For a list of key bindings and the relevant `Command Ids`, review the [key bindings document](https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts).
+>Para obter uma lista de atalhos de teclado e os `IDs de comando` relevantes, revise o [documento de atalhos de teclado](https://npsharp.girelli.dev.br/docs/getstarted/keybindings#_default-keyboard-shortcuts).
 
-If you are listing out multiple key bindings, you can use a table.
+Se você estiver listando várias combinações de teclas, poderá usar uma tabela.
 
->Shortcut|Key Strokes
->--------|-----------
->Cut|`kb(editor.action.clipboardCutAction)`
->Copy|`kb(editor.action.clipboardCopyAction)`
->Paste|`kb(editor.action.clipboardPasteAction)`
+> Atalho | Teclas
+>-------|-----------
+>Cortar|`kb(editor.action.clipboardCutAction)`
+>Copiar|`kb(editor.action.clipboardCopyAction)`
+>Colar|`kb(editor.action.clipboardPasteAction)`
 
-### Source Code
+### Código Fonte
 
-For source code, we use the fenced code block notation ```` ``` ````.
+Para o código-fonte, usamos a notação de bloco de código protegido ```` ``` ````.
 
->**Note:** You can add an optional language identifier to enable syntax highlighting in your fenced code block. For example, ```` ```json ```` or ```` ```javascript ````. [Read more →](https://docs.github.com/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)
+>**Observação:** Você pode adicionar um identificador de idioma opcional para ativar o realce de sintaxe em seu bloco de código protegido. Por exemplo, ```` ```json ```` ou ```` ```javascript ````. [Leia mais →](https://docs.github.com/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)
 
-An example of JavaScript source code:
+Um exemplo de código-fonte JavaScript:
 
 ```javascript
-function fancyAlert(arg) {
-  if (arg) {
-    $.facebox({ div: foo });
+função fantasiaAlert(arg) {
+  se (argumento) {
+    $.facebox({div:foo});
   }
 }
 ```
 
-## Gotchas
+## Pegadinhas
 
-### Double opening curly braces break generated handlebar files
+### Chaves de abertura dupla quebram os arquivos do guiador gerados
 
-Escape double opening curly braces in code blocks.
+Escape de chaves de abertura dupla em blocos de código.
 
 ```html
-<!DOCTYPE html>
+<!DOCTYPEhtml>
 <html>
-    <head>
+    <cabeça>
         <meta charset="utf-8" />
-        <title>Hello, Flask</title>
+        <title>Olá, Flask</title>
     </head>
-    <body>
-        <strong>Hello there, \{{ name }}!</strong> It's \{{ date.strftime("%A, %d %B, %Y at %X") }}.
+    <corpo>
+        <strong>Olá, \{{ nome }}!</strong> É \{{ date.strftime("%A, %d %B, %Y em %X") }}.
     </body>
 </html>
 ```
