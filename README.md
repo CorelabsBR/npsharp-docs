@@ -7,7 +7,7 @@ Você encontrou o repositório GitHub de documentação do Notepad Sharp, que co
 
 Os tópicos enviados aqui serão publicados no portal [Notepad Sharp](https://npsharp.girelli.dev.br/).
 
-Se você estiver procurando o repositório GitHub do produto NP Sharp, poderá encontrá-lo [aqui](https://github.com/microsoft/npsharp).
+Se você estiver procurando o repositório GitHub do produto NP Sharp, poderá encontrá-lo [aqui](https://github.com/Notepad-Sharp/npsharp).
 
 >**Nota**: O repositório npsharp-docs usa [Git LFS](https://git-lfs.github.com/) (Large File Storage) para armazenar arquivos binários, como imagens e `.gif`s. Se você estiver contribuindo ou atualizando imagens, habilite o Git LFS de acordo com as instruções na seção [Contribuindo](#contribuindo) abaixo.
 
@@ -35,9 +35,9 @@ Se você quiser dar feedback sobre a documentação, use o controle de feedback 
 
 ## Problemas de documentação
 
-Para inserir bugs de documentação, crie um [novo problema no GitHub](https://github.com/microsoft/npsharp-docs/issues). Verifique primeiro se há um problema existente.
+Para inserir bugs de documentação, crie um [novo problema no GitHub](https://github.com/Notepad-Sharp/npsharp-docs/issues). Verifique primeiro se há um problema existente.
 
-Se você acha que o problema está no próprio produto NP Sharp, insira os problemas no repositório do produto NP Sharp [aqui](https://github.com/microsoft/npsharp/issues).
+Se você acha que o problema está no próprio produto NP Sharp, insira os problemas no repositório do produto NP Sharp [aqui](https://github.comNotepad-Sharp/npsharp/issues).
 
 ## Contribuindo
 
@@ -56,7 +56,7 @@ Os dois fluxos de trabalho sugeridos são:
 
 1. Instale o [Git LFS](https://git-lfs.github.com/).
 2. Execute `git lfs install` para configurar ganchos git globais. Você só precisa executar isso uma vez por máquina.
-3. Autenticação SSH: `git clone git@github.com:microsoft/npsharp-docs.git`<br>Autenticação HTTPS: `git clone https://github.com/microsoft/npsharp-docs.git`
+3. Autenticação SSH: `git clone git@github.com:microsoft/npsharp-docs.git`<br>Autenticação HTTPS: `git clone https://github.com/Notepad-Sharp/npsharp-docs.git`
 4. Agora você pode `git add` arquivos binários e confirmá-los. Eles serão rastreados no LFS.
 
 #### Clonagem sem arquivos binários
@@ -67,11 +67,11 @@ Você pode querer clonar o repositório sem as imagens de 1,6 GB. Aqui estão as
 2. Execute `git lfs install` para configurar ganchos git globais. Você só precisa executar isso uma vez por máquina.
 3. Clone o repositório sem arquivos binários.
     - macOS/Linux:
-      - Autenticação SSH: `GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:microsoft/npsharp-docs.git`
-      - Autenticação HTTPS: `GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/microsoft/npsharp-docs.git`
+      - Autenticação SSH: `GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:Notepad-Sharp/npsharp-docs.git`
+      - Autenticação HTTPS: `GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/Notepad-Sharp/npsharp-docs.git`
     - Janelas:
-      - Autenticação SSH: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone git@github.com:microsoft/npsharp-docs.git`
-      - Autenticação HTTPS: `$env:GIT_LFS_SKIP_SMUDGE="1"; clone do git https://github.com/microsoft/npsharp-docs.git`
+      - Autenticação SSH: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone git@github.com:Notepad-Sharp/npsharp-docs.git`
+      - Autenticação HTTPS: `$env:GIT_LFS_SKIP_SMUDGE="1"; clone do git https://github.com/Notepad-Sharp/npsharp-docs.git`
 4. Agora você pode verificar seletivamente alguns arquivos binários para trabalhar. Por exemplo:
     - `git lfs pull -I "docs/nodejs"` para baixar apenas imagens em `docs/nodejs`
     - `git lfs pull -I "release-notes/images/1_4*/*"` para baixar apenas imagens em `release-notes/images/1_4*`
