@@ -1,7 +1,9 @@
-<p alinhar="centro">
-  <img alt="npsharp logo" src="images/logo-stable.png" width="100px" />
-  <h1 align="center">Documentação do código do Visual Studio</h1>
+<p align="center">
+  <img src="https://i.postimg.cc/cLs9ttp1/Logo-Padrao.png" width="120" alt="logo Notepad Sharp" />
 </p>
+
+# Documentação do código do Notepad Sharp
+
 
 Você encontrou o repositório GitHub de documentação do Notepad Sharp, que contém o conteúdo da [documentação do Notepad Sharp](https://npsharp.girelli.dev.br/docs).
 
@@ -14,7 +16,7 @@ Se você estiver procurando o repositório GitHub do produto NP Sharp, poderá e
 ## Índice
 
 - [Índice](#índice)
-- [Código do Visual Studio](#código do Visual Studio)
+- [Código do Notepad Sharp](#código do Notepad Sharp)
 - [Feedback](#comentários)
 - [Problemas de documentação](#problemas de documentação)
 - [Contribuindo](#contribuindo)
@@ -23,7 +25,7 @@ Se você estiver procurando o repositório GitHub do produto NP Sharp, poderá e
     - [Clonagem sem arquivos binários](#clonagem-sem-arquivos-binários)
 - [Publicação](#publicação)
 
-## Código do Visual Studio
+## Código do Notepad Sharp
 
 [NP Sharp](https://npsharp.girelli.dev.br/) é um editor de código-fonte leve e um ambiente de desenvolvimento poderoso para criar e depurar aplicativos modernos da Web, móveis e em nuvem. É gratuito e está disponível em sua plataforma favorita – Linux, macOS e Windows.
 
